@@ -1,0 +1,122 @@
+.user-details {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  margin: 2px 5px 2px 160px;
+}
+
+.user-details:hover {
+  cursor: pointer;
+}
+
+.chat-container {
+  width: 99%;
+  height: 86%;
+  margin: 3px auto 0px auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.chat-messages {
+  height: 91%;
+  overflow-y: auto;
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+}
+
+.sent-message {
+  background-color: #ccc;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  max-width: 50%;
+  text-align: left;
+  align-self: flex-end;
+}
+
+.recieved-message {
+  background-color: #ccc;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  max-width: 50%;
+  text-align: left;
+  align-self: flex-start;
+}
+
+.chat-input {
+  height: 9%;
+  display: flex;
+  padding: 5px;
+  justify-content: space-between;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.chat-input i {
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+/* ---------------------------------------------------------------- */
+.audio-player {
+  background-color: #ffffff; /* white */
+  padding: 10px 15px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #00000050;
+  max-width: 20%;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0px;
+}
+
+.audio-player h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+#waveform {
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.controls {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  margin-top: 2px;
+}
+
+.controls button {
+  background: #444;
+  border: none;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.controls button i {
+  pointer-events: none; /* makes the icon not block clicks */
+}
+
+.controls input[type="range"] {
+  width: 80px;
+  background: transparent;
+  accent-color: rgb(0, 0, 0); /* For most modern browsers */
+  cursor: pointer;
+}
